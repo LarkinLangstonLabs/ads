@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Larkin Langston provides advanced digital marketing and web development in Duluth, GA. Drive leads with AI-powered websites and conversion-focused strategies.">
+  <meta name="keywords" content="digital marketing, web development, lead generation, conversion optimization, websites, Duluth GA, Larkin Langston">
+  <meta name="author" content="Larkin Langston">
+  <meta name="robots" content="index, follow">
+  <title>Larkin Langston - Digital Marketing & Web Solutions</title>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      margin: 0;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 50;
+    }
+    nav .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+    }
+    nav .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #1e293b;
+    }
+    nav .logo span {
+      color: #ff6200;
+    }
+    nav .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    nav .nav-link {
+      position: relative;
+      color: #1e293b;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 8px 12px;
+      transition: color 0.3s;
+    }
+    nav .nav-link:hover::after {
+      width: 100%;
+    }
+    nav .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ff6200;
+      transition: width 0.3s;
+    }
+    nav .cta-button {
+      background-color: #ff6200;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+    nav .cta-button:hover {
+      background-color: #e55a00;
+    }
+    nav .mobile-menu-button {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    nav .mobile-menu {
+      display: none;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    nav .mobile-menu a {
+      display: block;
+      padding: 8px 16px;
+      color: #1e293b;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav .mobile-menu a:hover {
+      color: #ff6200;
+    }
+    nav .mobile-menu .cta-button {
+      margin: 8px 16px;
+    }
+    @media (max-width: 768px) {
+      nav .nav-links {
+        display: none;
+      }
+      nav .mobile-menu-button {
+        display: block;
+      }
+      nav .mobile-menu.active {
+        display: block;
+      }
+    }
+
+    /* Hero Section */
+    #home {
+      padding: 80px 16px 48px;
+      background: url(lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg) center/cover no-repeat;
+      text-align: center;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    #home .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    #home h1 {
+      font-size: 36px;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+    #home h1 span {
+      color: #ff6200;
+    }
+    #home p {
+      font-size: 18px;
+      color: #ffffff;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    #home .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+    #home .button {
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+    #home .button.primary {
+      background-color: #ff6200;
+      color: #fff;
+    }
+    #home .button.primary:hover {
+      background-color: #e55a00;
+    }
+    #home .button.secondary {
+      background-color: #ffedd5;
+      color: #c2410c;
+    }
+    #home .button.secondary:hover {
+      background-color: #fed7aa;
+    }
+    #home .scroll-indicator {
+      position: absolute;
+      bottom: 32px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    #home .scroll-indicator a {
+      color: #6b7280;
+      font-size: 24px;
+      animation: bounce 2s infinite;
+    }
+    #home .scroll-indicator a:hover {
+      color: #ff6200;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-20px); }
+      60% { transform: translateY(-10px); }
+    }
+
+    /* Services Section */
+    #services {
+      padding: 64px 16px;
+      background: linear-gradient(to bottom, #f9fafb, #fff);
+      text-align: center;
+    }
+    #services .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    #services h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #1e293b;
+      margin-bottom: 16px;
+    }
+    #services h2 span {
+      color: #ff6200;
+    }
+    #services p {
+      font-size: 18px;
+      color: #4b5563;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    #services .grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      margin-top: 48px;
+    }
+    #services .card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+      transition: transform 0.3s;
+    }
+    #services .card:hover {
+      transform: translateY(-5px);
+    }
+    #services .card-icon {
+      background-color: #ffedd5;
+      border-radius: 8px;
+      padding: 12px;
+      display: inline-block;
+    }
+    #services .card-icon i {
+      color: #ff6200;
+      font-size: 24px;
+    }
+    #services .card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1e293b;
+      margin: 16px 0;
+    }
+    #services .card p {
+      font-size: 14px;
+      color: #4b5563;
+      margin-bottom: 16px;
+    }
+    #services .card ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+    #services .card ul li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    #services .card ul li i {
+      color: #ff6200;
+      margin-right: 8px;
+    }
+    #services .card ul li p {
+      font-size: 14px;
+      color: #4b5563;
+    }
+    #services .cta {
+      margin-top: 48px;
+    }
+    #services .cta a {
+      background-color: #ff6200;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+    #services .cta a:hover {
+      background-color: #e55a00;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      padding: 64px 16px;
+      background-color: #ff6200;
+      color: #fff;
+      text-align: center;
+    }
+    .cta-section .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .cta-section h2 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .cta-section p {
+      font-size: 18px;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .cta-section .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+    }
+    .cta-section .button {
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+    .cta-section .button.primary {
+      background-color: #fff;
+      color: #c2410c;
+    }
+    .cta-section .button.primary:hover {
+      background-color: #f3f4f6;
+    }
+    .cta-section .button.secondary {
+      border: 1px solid #fff;
+      color: #fff;
+    }
+    .cta-section .button.secondary:hover {
+      background-color: #e55a00;
+    }
+
+    /* Contact Section */
+    #contact {
+      padding: 64px 16px;
+      background-color: #fff;
+    }
+    #contact .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+    }
+    #contact .contact-info {
+      flex: 1;
+      min-width: 250px;
+    }
+    #contact h2 {
+      font-size: 32px;
+      font-weight: 800;
+      color: #1e293b;
+      margin-bottom: 16px;
+    }
+    #contact h2 span {
+      color: #ff6200;
+    }
+    #contact .contact-info p {
+      font-size: 18px;
+      color: #4b5563;
+      margin-bottom: 32px;
+    }
+    #contact .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    #contact .info-item i {
+      background-color: #ffedd5;
+      color: #ff6200;
+      padding: 12px;
+      border-radius: 8px;
+      margin-right: 16px;
+    }
+    #contact .info-item h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1e293b;
+    }
+    #contact .info-item p {
+      font-size: 14px;
+      color: #4b5563;
+      margin: 4px 0 0;
+    }
+    #contact .contact-form {
+      flex: 1;
+      min-width: 300px;
+    }
+    #contact .form-container {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 24px;
+    }
+    #contact form {
+      display: grid;
+      gap: 16px;
+    }
+    #contact label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #1e293b;
+    }
+    #contact input,
+    #contact textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+    }
+    #contact input:focus,
+    #contact textarea:focus {
+      border-color: #ff6200;
+      outline: none;
+    }
+    #contact textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    #contact .form-message {
+      text-align: center;
+      font-size: 14px;
+    }
+    #contact .form-message.success {
+      color: #15803d;
+    }
+    #contact .form-message.error {
+      color: #dc2626;
+    }
+    #contact .submit-button {
+      background-color: #ff6200;
+      color: #fff;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #contact .submit-button:hover {
+      background-color: #e55a00;
+    }
+    #contact .submit-button:disabled {
+      background-color: #9ca3af;
+      cursor: not-allowed;
+    }
+    @media (min-width: 1024px) {
+      #contact .container {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+      }
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e293b;
+      color: #fff;
+      padding: 48px 16px;
+      text-align: center;
+    }
+    footer .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    footer .logo {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 32px;
+    }
+    footer .logo span {
+      color: #ff6200;
+    }
+    footer .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 32px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    footer h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #fb923c;
+      margin-bottom: 16px;
+    }
+    footer ul {
+      list-style: none;
+      padding: 0;
+    }
+    footer ul li a {
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+    footer ul li a:hover {
+      color: #fb923c;
+    }
+    footer .copyright {
+      margin-top: 32px;
+      padding-top: 32px;
+      border-top: 1px solid #4b5563;
+    }
+    footer .copyright p {
+      font-size: 14px;
+      color: #9ca3af;
+    }
+
+    /* Back to Top Button */
+    #back-to-top {
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      background-color: #ff6200;
+      color: #fff;
+      padding: 12px;
+      border-radius: 50%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: opacity 0.3s, background-color 0.3s;
+      opacity: 0;
+      visibility: hidden;
+    }
+    #back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    #back-to-top:hover {
+      background-color: #e55a00;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <div class="logo">Larkin langston Ads<span>.</span></div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="cta-button">Get Started</a>
+      </div>
+      <button class="mobile-menu-button">
+        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact" class="cta-button">Get Started</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <div class="container">
+      <h1>Transform Your <span>Digital Presence</span></h1>
+      <p>Larkin Langston creates stunning web experiences that captivate audiences and drive results. Based in Duluth, GA, we blend cutting-edge technology with artistic design to elevate your brand.</p>
+      <div class="buttons">
+        <a href="#contact" class="button primary">Get Started</a>
+        <a href="#services" class="button secondary">Learn More</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#services"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Our <span>Services</span></h2>
+      <p>Comprehensive digital solutions tailored to your business needs</p>
+      <div class="grid">
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Web Design</h3>
+          <p>Stunning, user-centric designs tailored to your brand, optimized for engagement and conversions with the latest design trends and technologies.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i><p>Responsive & Mobile-First</p></li>
+            <li><i class="fas fa-check-circle"></i><p>UI/UX Optimization</p></li>
+            <li><i class="fas fa-check-circle"></i><p>Brand Identity Integration</p></li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+          <p>Scalable, high-performance websites built with cutting-edge technologies to meet your business goals and exceed user expectations.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i><p>Custom CMS Solutions</p></li>
+            <li><i class="fas fa-check-circle"></i><p>E-Commerce Integration</p></li>
+            <li><i class="fas fa-check-circle"></i><p>API Development</p></li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-server"></i></div>
+          <h3>Hosting & Maintenance</h3>
+          <p>Secure hosting and proactive maintenance to keep your website fast, safe, and reliable with 99.9% uptime guarantee.</p>
+          <ul>
+            <li><i class="fas fa-check-circle"></i><p>24/7 Monitoring</p></li>
+            <li><i class="fas fa-check-circle"></i><p>Security Updates</p></li>
+            <li><i class="fas fa-check-circle"></i><p>Performance Optimization</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta">
+        <a href="#contact">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Transform Your Business?</h2>
+      <p>Let's discuss how we can help you achieve your digital goals</p>
+      <div class="buttons">
+        <a href="#contact" class="button primary">Get Started</a>
+        <a href="tel:+14702949203" class="button secondary"><i class="fas fa-phone-alt"></i> (470) 294-9203</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-info">
+        <h2>Get in <span>Touch</span></h2>
+        <p>Have a project in mind or want to learn more about our services? Fill out the form and we'll get back to you within 24 hours.</p>
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h3>Our Office</h3>
+            <p>Duluth, GA 30097</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h3>Email Us</h3>
+            <p>hello@larkinlangston.com</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <h3>Call Us</h3>
+            <p>(470) 294-9203</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-container">
+          <form id="contact-form">
+            <div>
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+            </div>
+            <div>
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div>
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" name="phone" autocomplete="tel">
+            </div>
+            <div>
+              <label for="message">How can we help you?</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div>
+              <button type="submit" class="submit-button">Send Message <i class="fas fa-paper-plane"></i></button>
+            </div>
+            <div id="form-message" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="logo">Larkin langston Ads<span>.</span></div>
+      <div class="grid">
+        <div>
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">E-Commerce</a></li>
+            <li><a href="#">SEO</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© 2025 Larkin Langston. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    // Initialize EmailJS
+    (function(){
+      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS Public Key
+    })();
+
+    // Mobile Menu Toggle
+    document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+      document.querySelector('.mobile-menu').classList.toggle('active');
+    });
+
+    // Back to Top Button
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+      } else {
+        backToTopButton.classList.remove('visible');
+      }
+    });
+    backToTopButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Smooth Scrolling for Anchor Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 64,
+            behavior: 'smooth'
+          });
+          document.querySelector('.mobile-menu').classList.remove('active');
+        }
+      });
+    });
+
+    // EmailJS Form Submission
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const form = this;
+      const formMessage = document.getElementById('form-message');
+      const submitButton = form.querySelector('.submit-button');
+      submitButton.disabled = true;
+      submitButton.textContent = 'Sending...';
+      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form)
+        .then(function() {
+          formMessage.classList.remove('hidden', 'error');
+          formMessage.classList.add('success');
+          formMessage.textContent = 'Message sent successfully! We will get back to you soon.';
+          form.reset();
+        }, function(error) {
+          formMessage.classList.remove('hidden', 'success');
+          formMessage.classList.add('error');
+          formMessage.textContent = 'Failed to send message. Please try again later.';
+          console.error('EmailJS error:', error);
+        })
+        .finally(function() {
+          submitButton.disabled = false;
+          submitButton.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
+          setTimeout(() => {
+            formMessage.classList.remove('success', 'error');
+            formMessage.textContent = '';
+          }, 5000);
+        });
+    });
+  </script>
+</body>
+</html>
