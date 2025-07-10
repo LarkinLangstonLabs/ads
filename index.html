@@ -1,784 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Larkin Langston provides advanced digital marketing and web development in Duluth, GA. Drive leads with AI-powered websites and conversion-focused strategies.">
-  <meta name="keywords" content="digital marketing, web development, lead generation, conversion optimization, websites, Duluth GA, Larkin Langston">
-  <meta name="author" content="Larkin Langston">
-  <meta name="robots" content="index, follow">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17232897472">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Larkin Langston offers expert SEO services and Google indexing solutions in Duluth, GA. Boost your website rankings with a free SEO audit!" />
+  <meta name="keywords" content="SEO services, Google indexing, search engine optimization, Duluth GA, digital marketing, keyword research, technical SEO, link building" />
+  <meta name="author" content="Larkin Langston" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <title>Larkin Langston | Expert SEO & Google Indexing Services</title>
+  <link rel="canonical" href="https://www.larkinlangston.com/" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Larkin Langston | Expert SEO & Google Indexing Services" />
+  <meta property="og:description" content="Boost your website's visibility with expert SEO services and Google indexing solutions in Duluth, GA. Get a free SEO audit today!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.larkinlangston.com/" />
+  <meta property="og:image" content="https://www.larkinlangston.com/images/seo-services-og.jpg" />
+  <meta property="og:image:alt" content="Larkin Langston SEO Services" />
+  <meta property="og:site_name" content="Larkin Langston" />
+  <meta property="og:locale" content="en_US" />
+  <!-- Twitter Card Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Larkin Langston | Expert SEO & Google Indexing Services" />
+  <meta name="twitter:description" content="Boost your website's visibility with expert SEO services and Google indexing solutions in Duluth, GA. Get a free SEO audit today!" />
+  <meta name="twitter:image" content="https://www.larkinlangston.com/images/seo-services-og.jpg" />
+  <meta name="twitter:site" content="@LarkinLangston" />
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Larkin Langston",
+      "description": "Expert SEO and Google indexing services in Duluth, GA, offering free SEO audits and comprehensive digital marketing solutions.",
+      "url": "https://www.larkinlangston.com/",
+      "telephone": "(470) 294-9203",
+      "email": "hello@larkinlangston.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Duluth",
+        "addressRegion": "GA",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61577195316555",
+        "https://www.instagram.com/larkinlangston/",
+        "https://www.linkedin.com/company/107757061/"
+      ],
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "(470) 294-9203",
+        "contactType": "Customer Service",
+        "email": "hello@larkinlangston.com",
+        "availableLanguage": "English"
+      }
+    }
   </script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-17232897472');
-  </script>
-  <title>Larkin Langston - Digital Marketing & Web Solutions</title>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF6600',
+            secondary: '#1C1C1C',
+            light: '#F5F5F5',
+            accent: '#FFE5D4',
+          },
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'sans-serif'],
+          },
+          animation: {
+            'float': 'float 3s ease-in-out infinite',
+            'pulse-slow': 'pulse 5s infinite',
+            'carousel-slide': 'carousel-slide 30s infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            'carousel-slide': {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-100%)' },
+            }
+          },
+          screens: {
+            'xs': '480px',
+          }
+        }
+      }
+    }
+  </script>
   <style>
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f8fafc;
-      color: #1e293b;
-      margin: 0;
-      scroll-behavior: smooth;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    .gradient-text {
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(45deg, #FF6600, #FF8C00);
     }
 
-    /* Navigation */
-    nav {
-      position: fixed;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      z-index: 50;
+    .feature-card {
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     }
-    nav .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 16px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 64px;
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
     }
-    nav .logo {
-      font-family: 'Poppins', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      color: #1e293b;
-    }
-    nav .logo span {
-      color: #ff6200;
-    }
-    nav .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-    }
-    nav .nav-link {
+
+    .service-item {
       position: relative;
-      color: #1e293b;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      padding: 8px 12px;
-      transition: color 0.3s;
+      overflow: hidden;
     }
-    nav .nav-link:hover::after {
-      width: 100%;
-    }
-    nav .nav-link::after {
+
+    .service-item::before {
       content: '';
       position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: 0;
+      top: 0;
       left: 0;
-      background-color: #ff6200;
-      transition: width 0.3s;
-    }
-    nav .cta-button {
-      background-color: #ff6200;
-      color: #fff;
-      padding: 8px 16px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 500;
-      transition: background-color 0.3s;
-    }
-    nav .cta-button:hover {
-      background-color: #e55a00;
-    }
-    nav .mobile-menu-button {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-    }
-    nav .mobile-menu {
-      display: none;
-      background-color: #fff;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    nav .mobile-menu a {
-      display: block;
-      padding: 8px 16px;
-      color: #1e293b;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav .mobile-menu a:hover {
-      color: #ff6200;
-    }
-    nav .mobile-menu .cta-button {
-      margin: 8px 16px;
-    }
-    @media (max-width: 768px) {
-      nav .nav-links {
-        display: none;
-      }
-      nav .mobile-menu-button {
-        display: block;
-      }
-      nav .mobile-menu.active {
-        display: block;
-      }
+      width: 5px;
+      height: 0;
+      background: #FF6600;
+      transition: height 0.3s ease;
     }
 
-    /* Hero Section */
-    #home {
-      padding: 80px 16px 48px;
-      background: url(lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg) center/cover no-repeat;
-      text-align: center;
-      min-height: 85vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .service-item:hover::before {
+      height: 100%;
+    }
+
+    .testimonial-card {
+      background: linear-gradient(135deg, #1C1C1C, #2D2D2D);
       position: relative;
-    }
-    #home .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    #home h1 {
-      font-size: 36px;
-      font-weight: 800;
-      color: #ffffff;
-      margin-bottom: 16px;
-    }
-    #home h1 span {
-      color: #ff6200;
-    }
-    #home p {
-      font-size: 18px;
-      color: #ffffff;
-      max-width: 600px;
-      margin: 0 auto 32px;
-    }
-    #home .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-    }
-    #home .button {
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      transition: background-color 0.3s;
-    }
-    #home .button.primary {
-      background-color: #ff6200;
-      color: #fff;
-    }
-    #home .button.primary:hover {
-      background-color: #e55a00;
-    }
-    #home .button.secondary {
-      background-color: #ffedd5;
-      color: #c2410c;
-    }
-    #home .button.secondary:hover {
-      background-color: #fed7aa;
-    }
-    #home .scroll-indicator {
-      position: absolute;
-      bottom: 32px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-    #home .scroll-indicator a {
-      color: #6b7280;
-      font-size: 24px;
-      animation: bounce 2s infinite;
-    }
-    #home .scroll-indicator a:hover {
-      color: #ff6200;
-    }
-    @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-      40% { transform: translateY(-20px); }
-      60% { transform: translateY(-10px); }
-    }
-
-    /* Services Section */
-    #services {
-      padding: 64px 16px;
-      background: linear-gradient(to bottom, #f9fafb, #fff);
-      text-align: center;
-    }
-    #services .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    #services h2 {
-      font-size: 32px;
-      font-weight: 800;
-      color: #1e293b;
-      margin-bottom: 16px;
-    }
-    #services h2 span {
-      color: #ff6200;
-    }
-    #services p {
-      font-size: 18px;
-      color: #4b5563;
-      max-width: 600px;
-      margin: 0 auto 32px;
-    }
-    #services .grid {
-      display: grid;
-      gap: 24px;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      margin-top: 48px;
-    }
-    #services .card {
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 24px;
-      transition: transform 0.3s;
-    }
-    #services .card:hover {
-      transform: translateY(-5px);
-    }
-    #services .card-icon {
-      background-color: #ffedd5;
-      border-radius: 8px;
-      padding: 12px;
-      display: inline-block;
-    }
-    #services .card-icon i {
-      color: #ff6200;
-      font-size: 24px;
-    }
-    #services .card h3 {
-      font-size: 18px;
-      font-weight: 600;
-      color: #1e293b;
-      margin: 16px 0;
-    }
-    #services .card p {
-      font-size: 14px;
-      color: #4b5563;
-      margin-bottom: 16px;
-    }
-    #services .card ul {
-      list-style: none;
-      padding: 0;
-      text-align: left;
-    }
-    #services .card ul li {
-      display: flex;
-      align-items: center;
-      margin-bottom: 8px;
-    }
-    #services .card ul li i {
-      color: #ff6200;
-      margin-right: 8px;
-    }
-    #services .card ul li p {
-      font-size: 14px;
-      color: #4b5563;
-    }
-    #services .cta {
-      margin-top: 48px;
-    }
-    #services .cta a {
-      background-color: #ff6200;
-      color: #fff;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      transition: background-color 0.3s;
-    }
-    #services .cta a:hover {
-      background-color: #e55a00;
-    }
-
-    /* CTA Section */
-    .cta-section {
-      padding: 64px 16px;
-      background-color: #ff6200;
-      color: #fff;
-      text-align: center;
-    }
-    .cta-section .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    .cta-section h2 {
-      font-size: 32px;
-      font-weight: 800;
-      margin-bottom: 16px;
-    }
-    .cta-section p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto 32px;
-    }
-    .cta-section .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 16px;
-    }
-    .cta-section .button {
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 16px;
-      font-weight: 500;
-      transition: background-color 0.3s;
-    }
-    .cta-section .button.primary {
-      background-color: #fff;
-      color: #c2410c;
-    }
-    .cta-section .button.primary:hover {
-      background-color: #f3f4f6;
-    }
-    .cta-section .button.secondary {
-      border: 1px solid #fff;
-      color: #fff;
-    }
-    .cta-section .button.secondary:hover {
-      background-color: #e55a00;
-    }
-
-    /* Contact Section */
-    #contact {
-      padding: 64px 16px;
-      background-color: #fff;
-    }
-    #contact .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 32px;
-    }
-    #contact .contact-info {
-      flex: 1;
-      min-width: 250px;
-    }
-    #contact h2 {
-      font-size: 32px;
-      font-weight: 800;
-      color: #1e293b;
-      margin-bottom: 16px;
-    }
-    #contact h2 span {
-      color: #ff6200;
-    }
-    #contact .contact-info p {
-      font-size: 18px;
-      color: #4b5563;
-      margin-bottom: 32px;
-    }
-    #contact .info-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 24px;
-    }
-    #contact .info-item i {
-      background-color: #ffedd5;
-      color: #ff6200;
-      padding: 12px;
-      border-radius: 8px;
-      margin-right: 16px;
-    }
-    #contact .info-item h3 {
-      font-size: 18px;
-      font-weight: 600;
-      color: #1e293b;
-    }
-    #contact .info-item p {
-      font-size: 14px;
-      color: #4b5563;
-      margin: 4px 0 0;
-    }
-    #contact .contact-form {
-      flex: 1;
       min-width: 300px;
     }
-    #contact .form-container {
-      background-color: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 24px;
+
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 5rem;
+      color: rgba(255, 102, 0, 0.1);
+      font-family: serif;
+      line-height: 1;
     }
-    #contact form {
-      display: grid;
-      gap: 16px;
-    }
-    #contact label {
-      font-size: 14px;
-      font-weight: 500;
-      color: #1e293b;
-    }
-    #contact input,
-    #contact textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #d1d5db;
-      border-radius: 6px;
-      font-size: 14px;
-      transition: border-color 0.3s;
-    }
-    #contact input:focus,
-    #contact textarea:focus {
-      border-color: #ff6200;
+
+    .contact-input:focus {
       outline: none;
+      box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.3);
     }
-    #contact textarea {
-      resize: vertical;
-      min-height: 100px;
+
+    .nav-link {
+      position: relative;
     }
-    #contact .form-message {
-      text-align: center;
-      font-size: 14px;
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #FF6600;
+      transition: width 0.3s ease;
     }
-    #contact .form-message.success {
-      color: #15803d;
+
+    .nav-link:hover::after {
+      width: 100%;
     }
-    #contact .form-message.error {
-      color: #dc2626;
+
+    .mobile-menu {
+      transition: transform 0.3s ease-in-out;
     }
-    #contact .submit-button {
-      background-color: #ff6200;
-      color: #fff;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 6px;
-      font-size: 16px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: background-color 0.3s;
+
+    .carousel-container {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      animation: carousel-slide 30s infinite linear;
     }
-    #contact .submit-button:hover {
-      background-color: #e55a00;
+
+    .error-message {
+      color: #dc2626;
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      display: none;
     }
-    #contact .submit-button:disabled {
-      background-color: #9ca3af;
-      cursor: not-allowed;
+
+    #home {
+      background: url(lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: overlay;
     }
-    @media (min-width: 1024px) {
-      #contact .container {
-        display: grid;
-        grid-template-columns: 5fr 7fr;
+
+    /* Mobile-specific styles */
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.75rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .mobile-menu {
+        transform: translateY(-100%);
+      }
+      .mobile-menu:not(.hidden) {
+        transform: translateY(0);
+      }
+      .feature-card, .service-item {
+        padding: 1.5rem;
+      }
+      .contact-input {
+        padding: 0.75rem;
+      }
+      .py-20 {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      footer .grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      footer .flex {
+        justify-content: center;
       }
     }
 
-    /* Footer */
-    footer {
-      background-color: #1e293b;
-      color: #fff;
-      padding: 48px 16px;
-      text-align: center;
-    }
-    footer .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    footer .logo {
-      font-family: 'Poppins', sans-serif;
-      font-size: 24px;
-      font-weight: 700;
-      color: #fff;
-      margin-bottom: 32px;
-    }
-    footer .logo span {
-      color: #ff6200;
-    }
-    footer .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 32px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    footer h3 {
-      font-size: 18px;
-      font-weight: 600;
-      color: #fb923c;
-      margin-bottom: 16px;
-    }
-    footer ul {
-      list-style: none;
-      padding: 0;
-    }
-    footer ul li a {
-      color: #9ca3af;
-      text-decoration: none;
-      font-size: 14px;
-      transition: color 0.3s;
-    }
-    footer ul li a:hover {
-      color: #fb923c;
-    }
-    footer .copyright {
-      margin-top: 32px;
-      padding-top: 32px;
-      border-top: 1px solid #4b5563;
-    }
-    footer .copyright p {
-      font-size: 14px;
-      color: #9ca3af;
-    }
-
-    /* Back to Top Button */
-    #back-to-top {
-      position: fixed;
-      bottom: 32px;
-      right: 32px;
-      background-color: #ff6200;
-      color: #fff;
-      padding: 12px;
-      border-radius: 50%;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: opacity 0.3s, background-color 0.3s;
-      opacity: 0;
-      visibility: hidden;
-    }
-    #back-to-top.visible {
-      opacity: 1;
-      visibility: visible;
-    }
-    #back-to-top:hover {
-      background-color: #e55a00;
+    @media (max-width: 480px) {
+      .text-4xl {
+        font-size: 1.5rem;
+      }
+      .text-3xl {
+        font-size: 1.25rem;
+      }
+      .text-xl {
+        font-size: 1rem;
+      }
+      .px-8 {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .py-4 {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+      }
     }
   </style>
 </head>
-<body>
+<body class="font-sans bg-light text-secondary">
   <!-- Navigation -->
-  <nav>
-    <div class="container">
-      <div class="logo">Larkin langston Ads<span>.</span></div>
-      <div class="nav-links">
-        <a href="#home" class="nav-link">Home</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#contact" class="cta-button">Get Started</a>
+  <nav class="bg-white shadow-md sticky top-0 z-50" aria-label="Main navigation">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <span class="text-xl font-bold">Larkin Langston</span>
       </div>
-      <button class="mobile-menu-button">
-        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="nav-link" aria-current="page">Home</a>
+        <a href="#features" class="nav-link">Why SEO</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <button class="md:hidden text-primary" aria-label="Toggle mobile menu" id="mobile-menu-toggle">
+        <i class="fas fa-bars text-2xl"></i>
       </button>
     </div>
-    <div class="mobile-menu">
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact" class="cta-button">Get Started</a>
+    <div id="mobile-menu" class="md:hidden hidden mobile-menu bg-white shadow-md">
+      <div class="flex flex-col space-y-4 p-4">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#features" class="nav-link">Why SEO</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="home">
-    <div class="container">
-      <h1>Transform Your <span>Digital Presence</span></h1>
-      <p>Larkin Langston creates stunning web experiences that captivate audiences and drive results. Based in Duluth, GA, we blend cutting-edge technology with artistic design to elevate your brand.</p>
-      <div class="buttons">
-        <a href="#contact" class="button primary">Get Started</a>
-        <a href="#services" class="button secondary">Learn More</a>
+  <header id="home" class="text-white py-20 md:py-32">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-pulse-slow">
+          <span class="gradient-text">SEO Services</span> That Rank You Higher
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">
+          Boost your website's visibility with expert SEO and Google indexing solutions
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#contact" class="bg-white text-primary font-bold px-8 py-4 rounded-lg hover:bg-gray-100 transition duration-300 shadow-lg transform hover:scale-105">
+            Get Your Free SEO Audit
+          </a>
+          <a href="#services" class="border-2 border-white text-white font-bold px-8 py-4 rounded-lg hover:bg-white hover:text-primary transition duration-300 shadow-lg transform hover:scale-105">
+            Explore SEO Services
+          </a>
+        </div>
       </div>
     </div>
-    <div class="scroll-indicator">
-      <a href="#services"><i class="fas fa-chevron-down"></i></a>
+  </header>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <span class="text-primary font-semibold">WHY CHOOSE SEO</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">Drive Traffic with Proven SEO</h2>
+        <p class="max-w-2xl mx-auto mt-4 text-gray-600">
+          Our SEO strategies combine technical expertise and content optimization to boost your search rankings.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="feature-card bg-white p-8 rounded-xl border border-gray-100">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-search text-primary text-2xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Keyword Optimization</h3>
+          <p class="text-gray-600">Target high-value keywords to attract the right audience and increase click-through rates.</p>
+        </div>
+        <div class="feature-card bg-white p-8 rounded-xl border border-gray-100">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-code text-primary text-2xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Technical SEO</h3>
+          <p class="text-gray-600">Optimize site speed, structure, and indexing for better search engine performance.</p>
+        </div>
+        <div class="feature-card bg-white p-8 rounded-xl border border-gray-100">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-link text-primary text-2xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Link Building</h3>
+          <p class="text-gray-600">Build high-quality backlinks to boost your site's authority and rankings.</p>
+        </div>
+        <div class="feature-card bg-white p-8 rounded-xl border border-gray-100">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-file-alt text-primary text-2xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Content Strategy</h3>
+          <p class="text-gray-600">Create engaging, SEO-optimized content to drive traffic and conversions.</p>
+        </div>
+        <div class="feature-card bg-white p-8 rounded-xl border border-gray-100">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-globe text-primary text-2xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Google Indexing</h3>
+          <p class="text-gray-600">Ensure your site is properly indexed for maximum visibility on Google.</p>
+        </div>
+        <div class="feature-card bg-white p-8 rounded-xl border border-gray-100">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mb-6">
+            <i class="fas fa-chart-line text-primary text-2xl" aria-hidden="true"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Performance Tracking</h3>
+          <p class="text-gray-600">Monitor rankings and traffic with detailed analytics reports.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Section -->
+  <section class="py-16 bg-accent">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 md:p-12 transform transition hover:scale-[1.01] duration-300">
+        <div class="inline-block px-4 py-2 bg-primary text-white rounded-full mb-6">
+          <span class="font-bold">LIMITED OFFER</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Free <span class="text-primary">Website + SEO Audit</span> for First 20 Clients
+        </h2>
+        <p class="text-xl text-gray-600 mb-8">
+          Discover your website's potential with a comprehensive SEO audit, no cost or obligation.
+        </p>
+        <a href="#contact" class="inline-block bg-primary text-white font-bold px-8 py-4 rounded-lg hover:bg-orange-700 transition duration-300 shadow-lg transform hover:scale-105">
+          Claim Your Audit Now <i class="fas fa-arrow-right ml-2" aria-hidden="true"></i>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services">
-    <div class="container">
-      <h2>Our <span>Services</span></h2>
-      <p>Comprehensive digital solutions tailored to your business needs</p>
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
-          <h3>Web Design</h3>
-          <p>Stunning, user-centric designs tailored to your brand, optimized for engagement and conversions with the latest design trends and technologies.</p>
-          <ul>
-            <li><i class="fas fa-check-circle"></i><p>Responsive & Mobile-First</p></li>
-            <li><i class="fas fa-check-circle"></i><p>UI/UX Optimization</p></li>
-            <li><i class="fas fa-check-circle"></i><p>Brand Identity Integration</p></li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-code"></i></div>
-          <h3>Web Development</h3>
-          <p>Scalable, high-performance websites built with cutting-edge technologies to meet your business goals and exceed user expectations.</p>
-          <ul>
-            <li><i class="fas fa-check-circle"></i><p>Custom CMS Solutions</p></li>
-            <li><i class="fas fa-check-circle"></i><p>E-Commerce Integration</p></li>
-            <li><i class="fas fa-check-circle"></i><p>API Development</p></li>
-          </ul>
-        </div>
-        <div class="card">
-          <div class="card-icon"><i class="fas fa-server"></i></div>
-          <h3>Hosting & Maintenance</h3>
-          <p>Secure hosting and proactive maintenance to keep your website fast, safe, and reliable with 99.9% uptime guarantee.</p>
-          <ul>
-            <li><i class="fas fa-check-circle"></i><p>24/7 Monitoring</p></li>
-            <li><i class="fas fa-check-circle"></i><p>Security Updates</p></li>
-            <li><i class="fas fa-check-circle"></i><p>Performance Optimization</p></li>
-          </ul>
-        </div>
+  <section id="services" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-16">
+        <span class="text-primary font-semibold">OUR SEO SERVICES</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">Comprehensive SEO Solutions</h2>
+        <p class="max-w-2xl mx-auto mt-4 text-gray-600">
+          From keyword research to technical optimization, we handle every aspect of your SEO strategy.
+        </p>
       </div>
-      <div class="cta">
-        <a href="#contact">Get a Free Consultation <i class="fas fa-arrow-right"></i></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container">
-      <h2>Ready to Transform Your Business?</h2>
-      <p>Let's discuss how we can help you achieve your digital goals</p>
-      <div class="buttons">
-        <a href="#contact" class="button primary">Get Started</a>
-        <a href="tel:+14702949203" class="button secondary"><i class="fas fa-phone-alt"></i> (470) 294-9203</a>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="service-item bg-white p-8 rounded-lg shadow-sm transition duration-300 hover:shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <i class="fas fa-search text-primary text-xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-bold">Keyword Research</h3>
+          </div>
+          <p class="text-gray-600">
+            Identify high-value keywords to target your ideal audience and maximize ROI.
+          </p>
+          <div class="mt-6">
+            <span class="text-primary font-bold">Starting at $499</span>
+          </div>
+        </div>
+        <div class="service-item bg-white p-8 rounded-lg shadow-sm transition duration-300 hover:shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <i class="fas fa-code text-primary text-xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-bold">Technical SEO</h3>
+          </div>
+          <p class="text-gray-600">
+            Optimize site structure, speed, and indexing for better search engine performance.
+          </p>
+          <div class="mt-6">
+            <span class="text-primary font-bold">Starting at $799</span>
+          </div>
+        </div>
+        <div class="service-item bg-white p-8 rounded-lg shadow-sm transition duration-300 hover:shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <i class="fas fa-link text-primary text-xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-bold">Link Building</h3>
+          </div>
+          <p class="text-gray-600">
+            Build authoritative backlinks to boost your site's credibility and rankings.
+          </p>
+          <div class="mt-6">
+            <span class="text-primary font-bold">Starting at $599/mo</span>
+          </div>
+        </div>
+        <div class="service-item bg-white p-8 rounded-lg shadow-sm transition duration-300 hover:shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <i class="fas fa-file-alt text-primary text-xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-bold">Content Optimization</h3>
+          </div>
+          <p class="text-gray-600">
+            Create and optimize content to rank higher and engage your audience.
+          </p>
+          <div class="mt-6">
+            <span class="text-primary font-bold">Starting at $399/mo</span>
+          </div>
+        </div>
+        <div class="service-item bg-white p-8 rounded-lg shadow-sm transition duration-300 hover:shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <i class="fas fa-globe text-primary text-xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-bold">Google Indexing</h3>
+          </div>
+          <p class="text-gray-600">
+            Ensure your pages are properly indexed for maximum search visibility.
+          </p>
+          <div class="mt-6">
+            <span class="text-primary font-bold">Starting at $299</span>
+          </div>
+        </div>
+        <div class="service-item bg-white p-8 rounded-lg shadow-sm transition duration-300 hover:shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-full flex items-center justify-center mr-4">
+              <i class="fas fa-chart-pie text-primary text-xl" aria-hidden="true"></i>
+            </div>
+            <h3 class="text-xl font-bold">SEO Analytics</h3>
+          </div>
+          <p class="text-gray-600">
+            Track rankings, traffic, and conversions with detailed performance reports.
+          </p>
+          <div class="mt-6">
+            <span class="text-primary font-bold">Starting at $199/mo</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <div class="contact-info">
-        <h2>Get in <span>Touch</span></h2>
-        <p>Have a project in mind or want to learn more about our services? Fill out the form and we'll get back to you within 24 hours.</p>
-        <div class="info-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <div>
-            <h3>Our Office</h3>
-            <p>Duluth, GA 30097</p>
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+          <span class="text-primary font-semibold">GET STARTED</span>
+          <h2 class="text-3xl md:text-4xl font-bold mt-2">Boost Your Rankings</h2>
+          <p class="max-w-2xl mx-auto mt-4 text-gray-600">
+            Fill out the form below for a free SEO audit and consultation within 24 hours.
+          </p>
+        </div>
+        <form id="contact-form" class="bg-gray-50 rounded-xl p-8 shadow-sm" novalidate>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Smith" required 
+                     class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
+                     aria-describedby="name-error">
+              <p id="name-error" class="error-message">Please enter your name</p>
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 font-medium mb-2">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required 
+                     class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
+                     aria-describedby="email-error">
+              <p id="email-error" class="error-message">Please enter a valid email address</p>
+            </div>
           </div>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-envelope"></i>
-          <div>
-            <h3>Email Us</h3>
-            <p>hello@larkinlangston.com</p>
+          <div class="mb-6">
+            <label for="website" class="block text-gray-700 font-medium mb-2">Your Website URL</label>
+            <input type="url" id="website" name="website" placeholder="https://example.com" 
+                   class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
+                   aria-describedby="website-error">
+            <p id="website-error" class="error-message">Please enter a valid website URL</p>
           </div>
-        </div>
-        <div class="info-item">
-          <i class="fas fa-phone-alt"></i>
-          <div>
-            <h3>Call Us</h3>
-            <p>(470) 294-9203</p>
+          <div class="mb-6">
+            <label for="message" class="block text-gray-700 font-medium mb-2">Your SEO Goals</label>
+            <textarea id="message" name="message" rows="5" placeholder="What are your SEO goals? Any specific keywords or challenges?" 
+                      class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:border-primary"
+                      aria-describedby="message-error"></textarea>
+            <p id="message-error" class="error-message">Please provide your SEO goals</p>
           </div>
-        </div>
-      </div>
-      <div class="contact-form">
-        <div class="form-container">
-          <form id="contact-form">
-            <div>
-              <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
-            </div>
-            <div>
-              <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" autocomplete="email" required>
-            </div>
-            <div>
-              <label for="phone">Phone Number</label>
-              <input type="text" id="phone" name="phone" autocomplete="tel">
-            </div>
-            <div>
-              <label for="message">How can we help you?</label>
-              <textarea id="message" name="message" required></textarea>
-            </div>
-            <div>
-              <button type="submit" class="submit-button">Send Message <i class="fas fa-paper-plane"></i></button>
-            </div>
-            <div id="form-message" class="form-message"></div>
-          </form>
-        </div>
+          <div class="flex items-center mb-6">
+            <input type="checkbox" id="consent" name="consent" required 
+                   class="w-4 h-4 text-primary rounded focus:ring-primary border-gray-300"
+                   aria-describedby="consent-error">
+            <label for="consent" class="ml-2 text-gray-600">
+              I agree to receive emails about my SEO audit and occasional marketing communications.
+            </label>
+            <p id="consent-error" class="error-message">Please agree to proceed</p>
+          </div>
+          <button type="submit" 
+                  class="w-full bg-primary text-white font-bold px-8 py-4 rounded-lg hover:bg-orange-700 transition duration-300 shadow-lg transform hover:scale-[1.01]">
+            Request a Free SEO Audit <i class="fas fa-paper-plane ml-2" aria-hidden="true"></i>
+          </button>
+        </form>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="container">
-      <div class="logo">Larkin langston Ads<span>.</span></div>
-      <div class="grid">
+  <footer class="bg-secondary text-gray-300 py-12" aria-label="Footer">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
         <div>
-          <h3>Services</h3>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">E-Commerce</a></li>
-            <li><a href="#">SEO</a></li>
+          <div class="flex items-center space-x-2 mb-4">
+            <span class="text-xl font-bold text-white">Larkin Langston</span>
+          </div>
+          <p class="mb-4">
+            Expert SEO and Google indexing services for businesses in Duluth, GA and beyond.
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://www.facebook.com/profile.php?id=61577195316555" class="text-gray-300 hover:text-white transition" aria-label="Facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/larkinlangston/" class="text-gray-300 hover:text-white transition" aria-label="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/107757061/" class="text-gray-300 hover:text-white transition" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-lg mb-4">Services</h3>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-white transition">Keyword Research</a></li>
+            <li><a href="#services" class="hover:text-white transition">Technical SEO</a></li>
+            <li><a href="#services" class="hover:text-white transition">Link Building</a></li>
+            <li><a href="#services" class="hover:text-white transition">Content Optimization</a></li>
+            <li><a href="#services" class="hover:text-white transition">Google Indexing</a></li>
           </ul>
         </div>
         <div>
-          <h3>Company</h3>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
+          <h3 class="text-white font-bold text-lg mb-4">Company</h3>
+          <ul class="space-y-2">
+            <li><a href="/about.html" class="hover:text-white transition">About Us</a></li>
+            <li><a href="/portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+            <li><a href="/blog.html" class="hover:text-white transition">Blog</a></li>
+            <li><a href="/tools.html" class="hover:text-white transition">Tools</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white font-bold text-lg mb-4">Contact</h3>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="fas fa-phone-alt mr-3 text-primary" aria-hidden="true"></i>
+              <span>(470) 294-9203</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3 text-primary" aria-hidden="true"></i>
+              <span>hello@larkinlangston.com</span>
+            </li>
           </ul>
         </div>
       </div>
-      <div class="copyright">
+      <div class="pt-8 border-t border-gray-700 text-center text-sm">
         <p>© 2025 Larkin Langston. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Back to Top Button -->
-  <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
-
   <script>
-    // Initialize EmailJS
-    (function(){
-      emailjs.init("hd88fDrF6DNArl87D"); // Replace with your EmailJS Public Key
-    })();
-
-    // Mobile Menu Toggle
-    document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-      document.querySelector('.mobile-menu').classList.toggle('active');
+    // Mobile menu toggle
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileMenuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenuToggle.querySelector('i').classList.toggle('fa-bars');
+      mobileMenuToggle.querySelector('i').classList.toggle('fa-times');
     });
 
-    // Back to Top Button
-    const backToTopButton = document.getElementById('back-to-top');
-    window.addEventListener('scroll', function() {
-      if (window.pageYOffset > 300) {
-        backToTopButton.classList.add('visible');
-      } else {
-        backToTopButton.classList.remove('visible');
-      }
-    });
-    backToTopButton.addEventListener('click', function(e) {
-      e.preventDefault();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Smooth Scrolling for Anchor Links
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -787,42 +631,106 @@
         const targetElement = document.querySelector(targetId);
         if (targetElement) {
           window.scrollTo({
-            top: targetElement.offsetTop - 64,
+            top: targetElement.offsetTop - 80,
             behavior: 'smooth'
           });
-          document.querySelector('.mobile-menu').classList.remove('active');
         }
+        mobileMenu.classList.add('hidden');
+        mobileMenuToggle.querySelector('i').classList.add('fa-bars');
+        mobileMenuToggle.querySelector('i').classList.remove('fa-times');
       });
     });
 
-    // EmailJS Form Submission
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      const form = this;
-      const formMessage = document.getElementById('form-message');
-      const submitButton = form.querySelector('.submit-button');
-      submitButton.disabled = true;
-      submitButton.textContent = 'Sending...';
-      emailjs.sendForm('service_zv7xhfo', 'template_6njbbbk', form)
-        .then(function() {
-          formMessage.classList.remove('hidden', 'error');
-          formMessage.classList.add('success');
-          formMessage.textContent = 'Message sent successfully! We will get back to you soon.';
-          form.reset();
-        }, function(error) {
-          formMessage.classList.remove('hidden', 'success');
-          formMessage.classList.add('error');
-          formMessage.textContent = 'Failed to send message. Please try again later.';
-          console.error('EmailJS error:', error);
-        })
-        .finally(function() {
-          submitButton.disabled = false;
-          submitButton.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>';
-          setTimeout(() => {
-            formMessage.classList.remove('success', 'error');
-            formMessage.textContent = '';
-          }, 5000);
+    // Form validation and submission
+    const contactForm = document.getElementById('contact-form');
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Reset error messages
+      document.querySelectorAll('.error-message').forEach(error => error.style.display = 'none');
+      let hasError = false;
+
+      // Validate name
+      const name = document.getElementById('name').value.trim();
+      if (!name) {
+        document.getElementById('name-error').style.display = 'block';
+        hasError = true;
+      }
+
+      // Validate email
+      const email = document.getElementById('email').value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!email || !emailRegex.test(email)) {
+        document.getElementById('email-error').style.display = 'block';
+        hasError = true;
+      }
+
+      // Validate website
+      const website = document.getElementById('website').value.trim();
+      const urlRegex = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/;
+      if (!website || !urlRegex.test(website)) {
+        document.getElementById('website-error').style.display = 'block';
+        hasError = true;
+      }
+
+      // Validate message
+      const message = document.getElementById('message').value.trim();
+      if (!message) {
+        document.getElementById('message-error').style.display = 'block';
+        hasError = true;
+      }
+
+      // Validate consent
+      const consent = document.getElementById('consent').checked;
+      if (!consent) {
+        document.getElementById('consent-error').style.display = 'block';
+        hasError = true;
+      }
+
+      if (hasError) return;
+
+      // Show success message
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<i class="fas fa-check-circle mr-2"></i> Request Sent!';
+      submitBtn.classList.remove('bg-primary', 'hover:bg-orange-700');
+      submitBtn.classList.add('bg-green-500', 'hover:bg-green-600');
+      submitBtn.disabled = true;
+
+      // Reset form
+      this.reset();
+
+      // Reset button after 3 seconds
+      setTimeout(() => {
+        submitBtn.innerHTML = originalText;
+        submitBtn.classList.remove('bg-green-500', 'hover:bg-green-600');
+        submitBtn.classList.add('bg-primary', 'hover:bg-orange-700');
+        submitBtn.disabled = false;
+      }, 3000);
+    });
+
+    // Lazy loading for images
+    const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+    if ('IntersectionObserver' in window) {
+      const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            observer.unobserve(img);
+          }
         });
+      });
+      lazyImages.forEach(img => imageObserver.observe(img));
+    }
+
+    // Close mobile menu on resize to desktop
+    window.addEventListener('resize', () => {
+      if (window.innerWidth >= 768) {
+        mobileMenu.classList.add('hidden');
+        mobileMenuToggle.querySelector('i').classList.add('fa-bars');
+        mobileMenuToggle.querySelector('i').classList.remove('fa-times');
+      }
     });
   </script>
 </body>
